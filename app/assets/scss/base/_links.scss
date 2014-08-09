@@ -1,0 +1,12 @@
+/* Links */
+a {
+	color: $gray-dark;
+	text-decoration: none;
+	outline: 0;
+	-ms-word-break: break-all;
+	    word-break: break-all;
+
+	&:hover, &:focus {
+		color: $gray;
+	}
+}

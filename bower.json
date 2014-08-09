@@ -1,0 +1,19 @@
+{
+  "name": "epigone",
+  "version": "0.0.1",
+  "homepage": "https://github.com/1shiharaT/epigone",
+  "authors": [
+    "1shiharaT"
+  ],
+  "license": "GPL",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "assets/components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "bootstrap-sass-official": "~3.1.1"
+  }
+}

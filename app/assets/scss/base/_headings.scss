@@ -1,0 +1,40 @@
+/* Headings */
+/*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
+h1, .alpha   {
+	font-size: 4em;
+	line-height: $line-height-base;
+}
+
+h2, .beta    {
+	font-size: 3.4em;
+	line-height: $line-height-base;
+}
+
+h3, .gamma   {
+	font-size: 2.6em;
+	line-height: $line-height-base;
+}
+
+h4, .delta   {
+	font-size: 2.2em;
+	line-height: $line-height-base;
+}
+
+h5, .epsilon {
+	font-size: 1.8em;
+	line-height: $line-height-base;
+}
+
+h6, .zeta    {
+	line-height: $line-height-base;
+}
+
+/* Subheadings */
+.subheading {
+	font-family: $font-secondary;
+	font-weight: normal;
+}
+
+.widget__title{
+	font-size: 1.8em;
+}
