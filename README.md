@@ -1,6 +1,6 @@
 ## GrowGroup HTML Boilerplate
-===
-HTMLのボイラープレートです。
+
+シンプルなHTMLのボイラープレート
 
 # Featured
 
@@ -19,7 +19,7 @@ HTMLのボイラープレートです。
 
 ### 1. Install
 
-	$ git clone https://github.com/1shiharaT/epigone.git epigone
+	$ git clone https://github.com/1shiharaT/grow-html-template.git hogehoge
 
 or [download](https://github.com/1shiharaT/grow-html-boilerplate/archive/master.zip) it and then rename the directory to the name of your theme or website.
 

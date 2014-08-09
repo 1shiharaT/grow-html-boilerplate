@@ -14,9 +14,9 @@ $class_push      : 'push';
 
 /* Layout Container */
 .lc {
-	// max-width: $max-width;
+	max-width: $max-width;
 	margin: 0 auto;
-	// padding: $pad-half;
+	padding: $pad-half;
 }
 
 /*------------------------------------*\
@@ -75,7 +75,7 @@ $class_push      : 'push';
 	overflow: hidden;
 	margin: 0 (-$pad-half);
 }
-#row1, #row2, #row3, #row4, #row5, #row6{
+.row1, .row2, .row3, .row4, .row5, .row6{
 	div{
 		@include column(12);
 	}
@@ -94,28 +94,28 @@ $class_push      : 'push';
 	$gutter_width: 2%;
 	$max_width: 2000px;
 
-	#row1{
+	.row1{
 		div{@include column(2);}
 		@include generate_grid_positions(div, 2);
 	}
-	#row2{
+	.row2{
 		div{@include column(2);}
 		@include generate_grid_positions(div, 2);
 	}
-	#row3{
+	.row3{
 		div{@include column(4);}
 		@include generate_grid_positions(div, 4);
 		div.last{@include column(12);};
 	}
-	#row4{
+	.row4{
 		div{@include column(4);}
 		@include generate_grid_positions(div, 4);
 	}
-	#row5{
+	.row5{
 		div{@include column(6);}
 		@include generate_grid_positions(div, 6);
 	}
-	#row6{
+	.row6{
 		div{@include column(12);}
 	}
 }
@@ -132,28 +132,28 @@ $class_push      : 'push';
 	$gutter_width: 2%;
 	$max_width: 2000px;
 
-	#row1{
+	.row1{
 		div{@include column(1);}
 		@include generate_grid_positions(div, 1);
 	}
-	#row2{
+	.row2{
 		div{@include column(2);}
 		@include generate_grid_positions(div, 2);
 	}
-	#row3{
+	.row3{
 		div{@include column(3);}
 		div.last{@include column(3);}
 		@include generate_grid_positions(div, 3);
 	}
-	#row4{
+	.row4{
 		div{@include column(4);}
 		@include generate_grid_positions(div, 4);
 	}
-	#row5{
+	.row5{
 		div{@include column(6);}
 		@include generate_grid_positions(div, 6);
 	}
-	#row6{
+	.row6{
 		div{@include column(12);}
 	}
 }
