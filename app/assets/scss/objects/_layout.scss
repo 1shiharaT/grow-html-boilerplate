@@ -24,7 +24,6 @@ $class_push      : 'push';
 \*------------------------------------*/
 
 .container{
-	@include container();
 	@include clearfix();
 
 	@media (max-width: $bp-small-3) {
@@ -38,10 +37,9 @@ $class_push      : 'push';
 /* Two Column Layout */
 .l-two-col {
 	@extend .cf;
-
+	 @include outer-container;
 	.l-main {
-		@include column(9);
-
+		@include span-columns(3);
 		@media (max-width: $bp-small-3) {
 			float: none;
 			width: 100%;
@@ -51,8 +49,7 @@ $class_push      : 'push';
 	}
 
 	.l-sidebar {
-		@include column(3);
-		@include push(9);
+		@include span-columns(9);
 
 		@media (max-width: $bp-small-3) {
 			float: none;
@@ -62,98 +59,5 @@ $class_push      : 'push';
 			padding: 10px;
 		}
 
-	}
-}
-
-
-/*------------------------------------*\
-    $GRIDS
-\*------------------------------------*/
-
-/* Grid Container */
-.g {
-	overflow: hidden;
-	margin: 0 (-$pad-half);
-}
-.row1, .row2, .row3, .row4, .row5, .row6{
-	div{
-		@include column(12);
-	}
-	@include generate_grid_positions(div, 12);
-}
-
-
-///////////////////
-// LAYOUT > 720  //
-///////////////////
-
-@media screen and (min-width: 720px) {
-
-	$total_width: 100%;
-	$container_margin: 1%;
-	$gutter_width: 2%;
-	$max_width: 2000px;
-
-	.row1{
-		div{@include column(2);}
-		@include generate_grid_positions(div, 2);
-	}
-	.row2{
-		div{@include column(2);}
-		@include generate_grid_positions(div, 2);
-	}
-	.row3{
-		div{@include column(4);}
-		@include generate_grid_positions(div, 4);
-		div.last{@include column(12);};
-	}
-	.row4{
-		div{@include column(4);}
-		@include generate_grid_positions(div, 4);
-	}
-	.row5{
-		div{@include column(6);}
-		@include generate_grid_positions(div, 6);
-	}
-	.row6{
-		div{@include column(12);}
-	}
-}
-
-
-///////////////////
-// LAYOUT > 960  //
-///////////////////
-
-@media all and (min-width: 960px) {
-
-	$total_width: 100%;
-	$container_margin: 1%;
-	$gutter_width: 2%;
-	$max_width: 2000px;
-
-	.row1{
-		div{@include column(1);}
-		@include generate_grid_positions(div, 1);
-	}
-	.row2{
-		div{@include column(2);}
-		@include generate_grid_positions(div, 2);
-	}
-	.row3{
-		div{@include column(3);}
-		div.last{@include column(3);}
-		@include generate_grid_positions(div, 3);
-	}
-	.row4{
-		div{@include column(4);}
-		@include generate_grid_positions(div, 4);
-	}
-	.row5{
-		div{@include column(6);}
-		@include generate_grid_positions(div, 6);
-	}
-	.row6{
-		div{@include column(12);}
 	}
 }

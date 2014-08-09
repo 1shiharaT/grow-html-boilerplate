@@ -8,19 +8,8 @@ var psi = require('psi');
 var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
-
-// browser sync
-gulp.task('browserSync', function() {
-	browserSync.init( null, {
-		notify: true,
-		ghostMode: {
-			clicks: true,
-			location: true,
-			forms: true,
-			scroll: true
-		}
-	});
-});
+var bourbon = require('node-bourbon');
+var neat = require('node-neat').includePaths;
 
 // Lint JavaScript
 gulp.task('jshint', function () {
@@ -47,7 +36,9 @@ gulp.task('copy', function () {
 gulp.task('styles', function() {
 	return gulp.src('app/assets/scss/main.scss')
 	.pipe(plugins.plumber())
-	.pipe(plugins.rubySass({ style: 'expanded', compass: true , trace: true }))
+	.pipe(plugins.sass({
+		includePaths: ['styles'].concat(neat)
+	}))
 	.pipe(plugins.autoprefixer('last 2 versions', 'ie 9', 'ios 6', 'android 4'))
 	.pipe(gulp.dest('app/assets/css'))
 	.pipe(plugins.cssshrink())

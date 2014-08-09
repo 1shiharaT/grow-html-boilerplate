@@ -33,7 +33,7 @@
 					}
 					&:active {
 						background: $nav_active_background;
-						@include box-shadow( inset rgba( 0,0,0,0.1 ) 0px 2px 2px );
+						// @include box-shadow( inset rgba( 0,0,0,0.1 ) 0px 2px 2px );
 					}
 				}
 				.dropdown-menu {
@@ -56,7 +56,7 @@
 						opacity: 1;
 						display: block;
 						background-color: $nav_dropdown_background_hover;
-						@include box-shadow( rgba( 0,0,0,0.1 ) 0px 2px 2px);
+						// @include box-shadow( rgba( 0,0,0,0.1 ) 0px 2px 2px);
 						> li {
 							display: block;
 							float: none;
@@ -66,7 +66,7 @@
 									background: #FFF;
 								}
 								&:active {
-									@include box-shadow( inset rgba( 0,0,0,0.1 ) 0px 2px 2px );
+									// @include box-shadow( inset rgba( 0,0,0,0.1 ) 0px 2px 2px );
 								}
 							}
 						}
