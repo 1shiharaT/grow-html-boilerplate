@@ -1,3 +1,6 @@
+/*------------------------------------*\
+    $ACCORDION
+\*------------------------------------*/
 .accordion {
 	margin-bottom: $space;
 }
@@ -16,13 +19,13 @@
 		content:"+";
 		float: right;
 	}
-		
+
 	&:hover {
 		color: $white;
 		background: $gray-dark;
 
 	}
-	
+
 	&.active {
 		background: $gray-dark;
 
